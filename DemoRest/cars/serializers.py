@@ -14,3 +14,4 @@ class CarDetailSerializer(serializers.ModelSerializer):
         model = Car
         fields = '__all__'
 
+ 
