@@ -1,10 +1,10 @@
-from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
+from cars.views import *
 
+app_name = 'car'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/v1/cars/', include('cars.urls')),
+    path('car/create/', CarCreateView.as_view()),
     
 
 ]
